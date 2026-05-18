@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spider-Man 2 — Detalhes, trailer, galeria e análise completa do jogo.">
+  <title>Spider-Man 2 | Detalhes — JOGOS SENAI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="detalhes.css">
+</head>
+<body>
+
+  <!-- ════════ HEADER ════════ -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo" aria-label="Página inicial">
+        JOGOS <span class="header__logo-accent">SENAI</span>
+      </a>
+      <nav class="header__nav" id="main-nav" aria-label="Navegação principal">
+        <ul class="header__links">
+          <li><a href="index.html" class="header__link">Home</a></li>
+          <li><a href="integrantes.html" class="header__link">Integrantes</a></li>
+          <li>
+            <a href="carrinho.html" class="header__link">
+              Carrinho
+              <span class="header__badge" id="cart-count" aria-label="Itens no carrinho"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ════════ MAIN ════════ -->
+  <main class="page-body">
+    <div class="container">
+      <div class="detail reveal">
+
+        <div class="detail__main">
+          <div class="detail__video">
+            <iframe
+              src="https://www.youtube.com/embed/07bcyesxbrg?si=WAMszDsoH5YvIe7r"
+              title="Spider-Man 2 — Trailer Oficial"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="gallery" role="list" aria-label="Galeria de screenshots">
+            <div class="gallery__item" role="listitem" data-modal-src="fotos SPIDER-MAN/1.jpg">
+              <img src="fotos SPIDER-MAN/1.jpg" alt="Spider-Man 2 Screenshot 1" loading="lazy">
+            </div>
+            <div class="gallery__item" role="listitem" data-modal-src="fotos SPIDER-MAN/2.jpg">
+              <img src="fotos SPIDER-MAN/2.jpg" alt="Spider-Man 2 Screenshot 2" loading="lazy">
+            </div>
+            <div class="gallery__item" role="listitem" data-modal-src="fotos SPIDER-MAN/3.jpg">
+              <img src="fotos SPIDER-MAN/3.jpg" alt="Spider-Man 2 Screenshot 3" loading="lazy">
+            </div>
+          </div>
+
+          <section class="review" aria-label="Análise do jogo">
+            <div class="review__grid">
+              <div class="point-card point-card--positive reveal">
+                <h4 class="point-card__title">Pontos Positivos</h4>
+                <ul class="point-card__list">
+                  <li class="point-card__item">A melhor mecânica de balançar com a teia já feita nos games.</li>
+                  <li class="point-card__item">Transição instantânea entre jogar com Peter Parker e Miles Morales.</li>
+                  <li class="point-card__item">Combate fluido e história grandiosa, digna de um filme da Marvel.</li>
+                </ul>
+              </div>
+              <div class="point-card point-card--negative reveal">
+                <h4 class="point-card__title">Pontos Negativos</h4>
+                <ul class="point-card__list">
+                  <li class="point-card__item">Algumas missões secundárias e atividades pelo mapa podem ficar repetitivas com o tempo.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="audience-card reveal">
+              <h4 class="audience-card__title">Público Alvo</h4>
+              <p class="audience-card__text">Altamente recomendado para fãs de super-heróis e do universo Marvel, jogadores que curtem jogos de ação e aventura em mundo aberto e qualquer um que queira uma experiência divertida e cinematográfica.</p>
+            </div>
+          </section>
+        </div>
+
+        <aside class="sidebar reveal">
+          <img src="fotos SPIDER-MAN/cartaz.jpg" alt="Cartaz Spider-Man 2" class="sidebar__poster">
+          <div class="sidebar__info">
+            <h2 class="sidebar__title">Spider-Man 2</h2>
+            <p class="sidebar__tagline">Ajude Peter e Miles a combater os novos perigos da cidade</p>
+            <p class="sidebar__meta"><strong>Lançamento:</strong> 20 de Outubro de 2023</p>
+            <p class="sidebar__meta"><strong>Gênero:</strong> Aventura, Ação, Plataforma, Herói</p>
+            <div class="purchase">
+              <p class="purchase__price">R$ 349,99</p>
+              <button class="btn btn--primary" data-game="Spider-Man 2" data-price="349.99" aria-label="Adicionar Spider-Man 2 ao carrinho">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ════════ MODAL ════════ -->
+  <div class="modal" id="image-modal" role="dialog" aria-modal="true" aria-label="Visualizar imagem">
+    <button class="modal__close" aria-label="Fechar">&times;</button>
+    <img class="modal__image" id="modal-image" alt="Imagem ampliada">
+  </div>
+
+  <!-- ════════ FOOTER ════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© 2026 Jogos SENAI — Todos os direitos reservados</p>
+      <p class="footer__credit">Desenvolvido por Davi, Renan e Kauan</p>
+    </div>
+  </footer>
+
+  <script src="carrinho.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>

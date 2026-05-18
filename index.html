@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JOGOS SENAI — Catálogo de jogos com os melhores títulos do universo gamer. Explore, descubra e adicione ao carrinho.">
+  <title>JOGOS SENAI — Catálogo de Jogos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ════════ HEADER (Global) ════════ -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo" aria-label="Página inicial">
+        JOGOS <span class="header__logo-accent">SENAI</span>
+      </a>
+      <nav class="header__nav" id="main-nav" aria-label="Navegação principal">
+        <ul class="header__links">
+          <li><a href="index.html" class="header__link header__link--active">Home</a></li>
+          <li><a href="integrantes.html" class="header__link">Integrantes</a></li>
+          <li>
+            <a href="carrinho.html" class="header__link">
+              Carrinho
+              <span class="header__badge" id="cart-count" aria-label="Itens no carrinho"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ════════ HERO ════════ -->
+  <section class="hero" aria-label="Banner principal">
+    <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">Explore Novos Mundos</h1>
+      <p class="hero__subtitle">Os melhores jogos em um só lugar</p>
+    </div>
+  </section>
+
+  <!-- ════════ MAIN CONTENT ════════ -->
+  <main class="page-body">
+    <div class="container">
+      <h2 class="section-title">Jogos em Destaque</h2>
+
+      <div class="game-grid">
+
+        <!-- Card 1 — Resident Evil Requiem -->
+        <article class="game-card" aria-label="Resident Evil Requiem">
+          <div class="game-card__image">
+            <img src="fotos R9/cartaz.webp" alt="Capa do jogo Resident Evil Requiem" loading="lazy">
+          </div>
+          <div class="game-card__body">
+            <h3 class="game-card__title">Resident Evil Requiem</h3>
+            <p class="game-card__desc">Sobreviva ao pesadelo em uma experiência aterrorizante de survival horror e mistérios sombrios.</p>
+            <a href="detailRequiem.html" class="btn btn--primary">Ver Detalhes</a>
+          </div>
+        </article>
+
+        <!-- Card 2 — Cyberpunk 2077 -->
+        <article class="game-card" aria-label="Cyberpunk 2077">
+          <div class="game-card__image">
+            <img src="fotos 2077/cartaz.webp" alt="Capa do jogo Cyberpunk 2077" loading="lazy">
+          </div>
+          <div class="game-card__body">
+            <h3 class="game-card__title">Cyberpunk 2077</h3>
+            <p class="game-card__desc">Um futuro distópico onde a tecnologia é tudo.</p>
+            <a href="detail2077.html" class="btn btn--primary">Ver Detalhes</a>
+          </div>
+        </article>
+
+        <!-- Card 3 — ARC Raiders -->
+        <article class="game-card" aria-label="ARC Raiders">
+          <div class="game-card__image">
+            <img src="fotos ARC/cartaz.png" alt="Capa do jogo ARC Raiders" loading="lazy">
+          </div>
+          <div class="game-card__body">
+            <h3 class="game-card__title">ARC Raiders</h3>
+            <p class="game-card__desc">Enfrente máquinas espaciais em um shooter cooperativo de tirar o fôlego.</p>
+            <a href="detailsarc.html" class="btn btn--primary">Ver Detalhes</a>
+          </div>
+        </article>
+
+        <!-- Card 4 — Spider-Man 2 -->
+        <article class="game-card" aria-label="Spider-Man 2">
+          <div class="game-card__image">
+            <img src="fotos SPIDER-MAN/cartaz.jpg" alt="Capa do jogo Spider-Man 2" loading="lazy">
+          </div>
+          <div class="game-card__body">
+            <h3 class="game-card__title">Spider-Man 2</h3>
+            <p class="game-card__desc">Balance pela cidade de Nova York com Peter e Miles.</p>
+            <a href="detailsspider.html" class="btn btn--primary">Ver Detalhes</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ════════ FOOTER (Global) ════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© 2026 Jogos SENAI — Todos os direitos reservados</p>
+      <p class="footer__credit">Desenvolvido por Davi, Renan e Kauan</p>
+    </div>
+  </footer>
+
+  <script src="carrinho.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
